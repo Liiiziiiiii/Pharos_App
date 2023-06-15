@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_model.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="З поверненням!"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textColor="@color/basic"
+                android:textSize="30sp" />
+
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="ім'я"
+                android:padding="16dp"
+                android:textColor="@color/basic" />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Поштової скриньки"
+                android:padding="16dp"
+                android:textColor="@color/basic" />
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Пароль"
+                android:padding="16dp"
+                android:textColor="@color/basic" />
+
+
+
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Увійти"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/signUpRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="32dp"
+                android:padding="8dp"
+                android:text="Зареєструватись"
+                android:textColor="#a0a3a8"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
